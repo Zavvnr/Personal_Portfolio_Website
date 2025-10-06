@@ -97,43 +97,35 @@ main {
     min-height: 200vh;
 }
 
-/* Hero Section */
-/* The main container for each content section */
-.content-section {
-    background-color: #202e0c;
-    color: #aeaec9;
-    border-radius: 25px;
-    padding: 2rem 3rem;
-    max-width: 1200px;
-    margin: 2rem auto;
+/* This is the new Flexbox container for your sections */
+.side-by-side-container {
+    display: flex; /* This is the key: it places the sections next to each other */
+    justify-content: center; /* Centers the boxes on the page */
+    gap: 2rem; /* Creates a gap between the two boxes */
+    flex-wrap: wrap; /* Allows the boxes to stack vertically on small screens */
+    padding: 2rem; /* Adds some space around the container */
 }
 
-/* This is the crucial rule that creates the columns */
-.two-column-layout {
-    display: flex; /* This tells the browser to place items side-by-side */
-    align-items: flex-start;
-    gap: 3rem;
+/* This styles each individual box */
+.info-box {
+    flex: 1; /* Allows each box to grow and take up equal space */
+    min-width: 300px; /* Prevents the boxes from getting too squished */
+    
+    /* Gradient background from your design */
+    background-image: linear-gradient(to bottom, #008C9E, #6DD47E);
+    
+    color: #000000; /* Black text for readability on the light gradient */
+    padding: 2rem;
+    border-radius: 15px;
 }
 
-/* Left column (for the heading) */
-.column-left {
-    flex-basis: 30%;
-    flex-shrink: 0; /* Prevents this column from shrinking */
-}
-
-.column-left h2 {
-    color: #71c774;
+.info-box h2 {
+    margin-top: 0;
+    text-align: center;
     font-size: 1.8em;
-    margin: 0;
 }
 
-/* Right column (for the paragraphs) */
-.column-right {
-    flex-basis: 70%;
-}
-
-.column-right p {
-    margin: 0 0 1em 0;
+.info-box p {
     line-height: 1.6;
 }
 
