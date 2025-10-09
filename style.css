@@ -4,9 +4,8 @@ body {
     margin: 0;
     line-height: 1.0;
     color: #aeaec9;
-    background: linear-gradient(to bottom, #000000, #301053); /* A fixed, deep background color */
+    background: linear-gradient(to bottom, #000000, #200a38); /* A fixed, deep background color */
     background-attachment: fixed;
-    /* Remove the background-image and transition here; it's now on the main element */
 }
 
 ul {
@@ -20,7 +19,7 @@ ul {
 /* Header Styling */
 .hero-container {
     padding: 0; /* Removed side padding, kept top/bottom padding */
-    background-color: #ffffff;
+    background-color: linear-gradient(to bottom, #07050e, #210b38);
 }
 
 /* Flexbox container for the two columns */
@@ -42,7 +41,7 @@ ul {
 
 .hero-text h1 {
     font-size: 4em; /* Large font size */
-    color: #000000;
+    color: #b1a9a9;
     margin: 0;
     line-height: 1.1; /* Adjusts spacing between lines of text */
 }
@@ -117,6 +116,7 @@ main {
     color: #000000; /* Black text for readability on the light gradient */
     padding: 2rem;
     border-radius: 15px;
+    opacity: 0.7; /* Makes the box background transparent */
 }
 
 .info-box h2 {
@@ -342,6 +342,15 @@ main {
     margin-bottom: 20px;
     line-height: 1.5em;
     font-size: 1.5em;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Footer Styling */

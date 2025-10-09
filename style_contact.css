@@ -1,0 +1,177 @@
+/* General Body Styles */
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.0;
+    color: #aeaec9;
+    background: linear-gradient(to bottom, #000000, #200a38); /* A fixed, deep background color */
+    background-attachment: fixed;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.hero-nav {
+    background-color: #191633;
+    padding: 1rem;
+    margin: 0; /* No margin on any side */
+}
+
+.hero-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to wrap on small screens */
+    gap: 20px;
+}
+
+.hero-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Container for the form */
+/* Flex container to center the form */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Wrapper for the form content */
+.contact-form-wrapper {
+    background-color: rgba(35, 20, 78, 0.4); /* Dark background with opacity */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main Heading: "Contact Me" */
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    color: #b3bd59; /* White color for better contrast */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Subtitle paragraph */
+.subtitle {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Styles for each form group (label + input) */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Main labels */
+label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* "(required)" text style */
+.required {
+    color: #777;
+    font-weight: 400;
+}
+
+/* General styles for input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8c3b3b; /* Highlight border on focus */
+}
+
+/* Container for the two-column name fields */
+.name-fields {
+    display: flex;
+    gap: 20px; /* Space between First and Last name fields */
+}
+
+/* Individual container for each name field */
+.field-container {
+    flex: 1; /* Each field takes up equal space */
+}
+
+/* Sub-labels for "First Name" and "Last Name" */
+.sub-label {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 6px;
+}
+
+/* The circular "Send" button */
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; /* This makes it a circle */
+    background-color: #8c3b3b;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #732f2f; /* Darker shade on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .name-fields {
+        flex-direction: column; /* Stack name fields vertically */
+        gap: 0; /* Remove gap when stacked */
+    }
+    
+    .field-container {
+      margin-bottom: 25px;
+    }
+
+    .field-container:last-child {
+      margin-bottom: 0;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
