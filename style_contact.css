@@ -56,7 +56,7 @@ body {
 h1 {
     font-family: 'Lora', serif;
     font-size: 2.5em;
-    color: #b3bd59; /* White color for better contrast */
+    color: #b3bd59; /* Yellow color for better contrast & more feel alive */
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -79,16 +79,30 @@ h1 {
 label {
     display: block;
     font-size: 1em;
-    color: #333;
-    margin-bottom: 8px;
+    color: #aeaec9; /* Light text color for all labels */
+    margin-bottom: 8px; /* Adds space below the label, above the input */
     font-weight: 500;
 }
 
 /* "(required)" text style */
 .required {
-    color: #777;
+    color: #888; /* A slightly dimmer color for "(required)" */
     font-weight: 400;
 }
+
+.page-background {
+    background-color: rgba(35, 20, 78, 0.2); /* Semi-transparent dark purple. Adjust the 0.2 value! */
+    max-width: 1200px; /* Set a max-width for the container */
+    margin: 40px auto; /* Centers the container on the page with space on top/bottom */
+    padding: 20px; /* Adds space between the content and the edge of the container */
+    border-radius: 15px; /* Rounds the corners of the container */
+    box-sizing: border-box;
+}
+
+
+/* You can now DELETE the .sub-label selector from your CSS file, 
+  as the main 'label' selector handles all the styling.
+*/
 
 /* General styles for input fields and textarea */
 input[type="text"],
@@ -123,16 +137,16 @@ textarea:focus {
 /* Sub-labels for "First Name" and "Last Name" */
 .sub-label {
     font-size: 0.85em;
-    color: #666;
+    color: #fffdfd;
     margin-top: 6px;
 }
 
 /* The circular "Send" button */
 button {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%; /* This makes it a circle */
-    background-color: #8c3b3b;
+    width: 120px;
+    height: 70px;
+    border-radius: 10%; /* This makes it a circle */
+    background-color: #b3bd59; /* Yellow color */
     color: white;
     border: none;
     font-size: 1.2em;
@@ -142,7 +156,7 @@ button {
 }
 
 button:hover {
-    background-color: #732f2f; /* Darker shade on hover */
+    background-color: #3e6d2c; /* Darker shade on hover */
 }
 
 /* Footer Styling */
@@ -151,7 +165,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 20px;
+    margin-top: 40px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
