@@ -3,8 +3,8 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 1.0;
-    color: #aeaec9;
-    background: linear-gradient(to bottom, #000000, #200a38); /* A fixed, deep background color */
+    color: #c9a940;
+    background: linear-gradient(to bottom, #ffffff, #c99433, #73b626); /* changing background color */
     background-attachment: fixed;
 }
 
@@ -19,7 +19,7 @@ ul {
 /* Header Styling */
 .hero-container {
     padding: 0; /* Removed side padding, kept top/bottom padding */
-    background-color: linear-gradient(to bottom, #07050e, #210b38);
+    background-color: linear-gradient(to bottom, #ffffff, #e0ab37);
 }
 
 /* Flexbox container for the two columns */
@@ -41,30 +41,60 @@ ul {
 
 .hero-text h1 {
     font-size: 4em; /* Large font size */
-    color: #b1a9a9;
+    color: #ca9545;
     margin: 0;
     line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+
+.index-h1 h1{
+    font-size: 5em; /* Slightly smaller font size for index page */
+    color: #000000;
+    margin: 0;
+    line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+.index-h1 h1,
+h1.index-h1 {
+    font-size: clamp(2rem, 6vw, 5em);
+    color: #000000;
+    margin: 0;
+    line-height: 1.1;
+
+    /* force single-line display and gracefully hide overflow */
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* Right column for the photo */
 .hero-photo-container {
     flex: 1;
-    min-width: 300px;
-    text-align: center;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* push image to the right */
+    padding-left: 1rem; /* spacing from center, adjust as needed */
 }
 
 .profile-image {
-    max-width: 350px; /* Controls the max size of the photo */
+    max-width: 350px;
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Makes the photo a circle */
+    border-radius: 50%;
+    margin-left: 0; /* ensure no conflicting left margin */
+}
+
+@media (max-width: 768px) {
+    .hero-photo-container {
+        justify-content: center;
+        padding-left: 0;
+    }
 }
 
 /* The new navigation bar */
 .hero-nav {
-    background-color: #191633;
-    padding: 1rem;
-    margin: 0; /* No margin on any side */
+    background-color: #b49508;
+    padding: 20px;
+    margin: 15px; /* No margin on any side */
+    border-radius: 15px;
 }
 
 .hero-nav ul {
@@ -74,14 +104,14 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allows links to wrap on small screens */
-    gap: 20px;
+    gap: 50px;
 }
 
 .hero-nav ul li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 2em;
 }
 
 /* Main Content Styling */
@@ -90,7 +120,7 @@ main {
     max-width: 1800px;
     margin: 50px auto; /* Increased from 20px to 50px for more top/bottom space */
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(233, 183, 47, 0.815);
     background: transparent; /* Changed to transparent to show body background */
     transition: background-image 0.5s ease-out;
     min-height: 200vh;
@@ -111,7 +141,7 @@ main {
     min-width: 300px; /* Prevents the boxes from getting too squished */
     
     /* Gradient background from your design */
-    background-image: linear-gradient(to bottom, #008C9E, #6DD47E);
+    background-image: linear-gradient(to bottom, #e0ab19, #6DD47E);
     
     color: #000000; /* Black text for readability on the light gradient */
     padding: 2rem;
@@ -206,6 +236,7 @@ main {
     margin-bottom: 20px; /* Add some space between the heading and the quotes */
     font-family: 'Dancing Script', cursive; /* Use a cursive font like the image */
     font-size: 3em; /* Significantly larger font size for the quote */
+    color: #000000; /* Black color for the heading for readability */
 }
 
 .features {
@@ -225,17 +256,18 @@ main {
 
 /* Individual quote items */
 .feature-item {
-    background-color: transparent;
-    color: #fff;
+    background-image: linear-gradient(to bottom, #7c5e0b, #7c5e0b);
+    color: #090a00;
     padding: 0; /* Remove padding from the item itself */
     box-shadow: none;
     flex: 1 1 48%; /* Each item takes up roughly half the width */
     text-align: center;
     border: none;
+    border-radius: 15px;
 }
 
 .feature-item h4 {
-    color: #fff;
+    color: #0f0101;
     margin: 0; /* Remove default margin */
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
@@ -244,7 +276,7 @@ main {
 }
 
 .feature-item p {
-    color: #fff;
+    color: #0f0101;
     margin: 0; /* Remove default margin */
     font-family: 'Dancing Script', cursive;
     font-size: 1.2em;
@@ -273,7 +305,7 @@ main {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(243, 243, 243, 0.1);
     margin-bottom: 20px;
     line-height: 1.5em;
     font-size: 1.5em;
@@ -344,15 +376,6 @@ main {
     font-size: 1.5em;
 }
 
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
 /* Footer Styling */
 footer {
     background-color: #333;
@@ -387,16 +410,14 @@ footer {
 /* Main Content Styling */
 main {
     padding: 20px;
-/*    max-width: 960px; */
     max-width: 1800px;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 
     /* Set the initial gradient for the main container */
-    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+    background-image: linear-gradient(to bottom, rgb(247, 247, 247), rgba(0,0,0,0.5));
     transition: background-image 0.5s ease-out;
 
     /* Make the container very tall to enable the scroll effect */
-    min-height: 200vh;
 }
