@@ -311,14 +311,6 @@ main {
     font-size: 1.5em;
 }
 
-/*.class-content {
-/*    display: flex; /* This makes the children lay out in a row */
-/*    align-items: center; /* This centers the items vertically */
-/*    justify-content: space-between; /* This pushes the text to the left and the image to the right */
-/*    gap: 40px; /* Adds space between the text and the image */
-/*    padding: 50px 0;
-/*}*/
-
 /* Container for the text content */
 .text-container {
     flex: 1; /* This makes the container take up 1 unit of available space */
@@ -355,25 +347,6 @@ main {
     
     /* Optional: Other styles */
     border-radius: 10px;
-}
-
-/* Basic Reset & Body Styling for ProjectsExperienceExtracurriculars.html*/
-.experience-header {
-    text-align: left;
-    margin-bottom: 20px; /* Add some space between the heading and the content */
-    font-family: 'Dancing Script', cursive; /* Use a cursive font like the image */
-    font-size: 2em; /* Significantly larger font size for the quote */
-}
-
-.experience-content {
-    background-color: #1a1a2e; /* Dark background for contrast */
-    color: #fff; /* White text for readability */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    line-height: 1.5em;
-    font-size: 1.5em;
 }
 
 /* Footer Styling */

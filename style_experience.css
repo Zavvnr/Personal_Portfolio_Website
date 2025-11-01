@@ -1,0 +1,229 @@
+/* Basic Reset & Body Styling for index.html*/
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.0;
+    color: #000000;
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff); /* changing background color */
+    background-attachment: fixed;
+}
+
+ul {
+        list-style-type: '- ';
+        padding-left: 20px;   /* Adds indentation to the left of the list */
+        margin-top: 5px;      /* Adjusts space above the list if needed */
+        margin-bottom: 5px;   /* Adjusts space below the list if needed */
+    }
+
+/*
+/* Header Styling */
+.hero-container {
+    padding: 0; /* Removed side padding, kept top/bottom padding */
+    background-color: linear-gradient(to bottom, #ffffff, #e0ab37);
+}
+
+/* Flexbox container for the two columns */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* This padding is important to keep your content off the screen edges */
+    padding: 2rem; 
+}
+
+/* Left column for text */
+.hero-text {
+    flex: 1; /* Allows this column to grow */
+    min-width: 300px; /* Prevents it from getting too squished */
+    text-align: center; /* Center-align text */
+    margin-top: 20px;
+}
+
+.hero-text h1 {
+    font-size: 4em; /* Large font size */
+    color: #ca9545;
+    margin: 20px;
+    line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+
+.index-h1 h1{
+    font-size: 5em; /* Slightly smaller font size for index page */
+    color: #000000;
+    margin: 0;
+    line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+.index-h1 h1,
+h1.index-h1 {
+    font-size: clamp(2rem, 6vw, 5em);
+    color: #000000;
+    margin: 0;
+    line-height: 1.1;
+
+    /* force single-line display and gracefully hide overflow */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* The new navigation bar */
+.hero-nav {
+    background-color: #b49508;
+    padding: 20px;
+    margin: 15px; /* No margin on any side */
+    border-radius: 15px;
+}
+
+.hero-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to wrap on small screens */
+    gap: 50px;
+}
+
+.hero-nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.hero h2 {
+    color: #71c774;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    text-align: left;
+    color:#f9f9f9;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Responsive: scale down on small screens */
+@media (max-width: 600px) {
+    .image-frame-header {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+.features {
+    padding: 50px 0; /* Keep the padding */
+    text-align: center; /* Center the quotes-header and quotes-grid */
+}
+
+/* Basic Reset & Body Styling for ProjectExperienceExtracurriculars.html*/
+.class-header {
+    text-align: left;
+    margin-bottom: 20px; /* Add some space between the heading and the content */
+    font-family: 'Dancing Script', cursive; /* Use a cursive font like the image */
+    font-size: 2em; /* Significantly larger font size for the quote */
+}
+
+.class-content {
+    /* Flexbox properties for the side-by-side layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Space between the text and image */
+
+    /* The rest of the styling you want */
+    background-color: #664d0a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(243, 243, 243, 0.1);
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+/* Container for the text content */
+.text-container {
+    flex: 1; /* This makes the container take up 1 unit of available space */
+}
+
+/* Container for the image */
+.image-container {
+    flex: 1; /* This makes the container take up 1 unit of available space, creating a 50/50 split */
+    text-align: right; /* Aligns the image to the right within its container */
+}
+
+/* Styles for the image itself */
+.image-container img {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+.related-classes-exception {
+    font-size: 0.6em; /* Smaller font size for the exception note */
+    color: #ccc; /* Lighter color for less emphasis */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -15px; /* Adjust margin to bring it closer to the heading */
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.fixed-size-image {
+    width: 250px;  /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    
+    /* Control how the image resizes to fit the box */
+    object-fit: cover;
+    
+    /* Optional: Other styles */
+    border-radius: 10px;
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+
+    /* Set the initial gradient for the main container */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    transition: background-image 0.5s ease-out;
+
+    /* Make the container very tall to enable the scroll effect */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
