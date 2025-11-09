@@ -1,4 +1,3 @@
-/* Basic Reset & Body Styling for index.html*/
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -33,7 +32,6 @@ ul {
     padding: 2rem; 
 }
 
-/* Left column for text */
 .hero-text {
     flex: 1; /* Allows this column to grow */
     min-width: 300px; /* Prevents it from getting too squished */

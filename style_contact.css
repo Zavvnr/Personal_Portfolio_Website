@@ -1,20 +1,17 @@
-/* General Body Styles */
 body {
-    height: 100%;
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 1.0;
-    color: #aeaec9;
-    background: linear-gradient(to bottom, #000000, #200a38); /* A fixed, deep background color */
+    color: #000000;
+    background: linear-gradient(to bottom, #bbc0915a, #c99433, #73b626); /* changing background color */
     background-attachment: fixed;
-    padding: 0;
 }
 
-/* Navigation Bar Styles */
 .hero-nav {
-    background-color: #191633;
-    padding: 1rem;
-    margin: 0; /* No margin on any side */
+    background-color: #b49508;
+    padding: 20px;
+    margin: 15px; /* No margin on any side */
+    border-radius: 15px;
 }
 
 .hero-nav ul {
@@ -24,14 +21,44 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allows links to wrap on small screens */
-    gap: 20px;
+    gap: 50px;
 }
 
 .hero-nav ul li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 2em;
+}
+
+.hero-text {
+    flex: 1; /* Allows this column to grow */
+    min-width: 300px; /* Prevents it from getting too squished */
+}
+
+.hero-text h1 {
+    font-size: 4em; /* Large font size */
+    color: #ca9545;
+    margin: 0;
+    line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+
+.index-h1 h1{
+    font-size: 5em; /* Slightly smaller font size for index page */
+    color: #000000;
+    margin: 0;
+    line-height: 1.1; /* Adjusts spacing between lines of text */
+}
+.index-h1 h1,
+h1.index-h1 {
+    font-size: clamp(2rem, 6vw, 5em);
+    color: #000000;
+    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+    /* force single-line display and gracefully hide overflow */
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* Container for the form */
@@ -86,7 +113,7 @@ label {
 
 /* "(required)" text style */
 .required {
-    color: #888; /* A slightly dimmer color for "(required)" */
+    color: #150909; /* A slightly dimmer color for "(required)" */
     font-weight: 400;
 }
 
@@ -98,11 +125,6 @@ label {
     border-radius: 15px; /* Rounds the corners of the container */
     box-sizing: border-box;
 }
-
-
-/* You can now DELETE the .sub-label selector from your CSS file, 
-  as the main 'label' selector handles all the styling.
-*/
 
 /* General styles for input fields and textarea */
 input[type="text"],
@@ -127,17 +149,19 @@ textarea:focus {
 .name-fields {
     display: flex;
     gap: 20px; /* Space between First and Last name fields */
+    color: #000000;
 }
 
 /* Individual container for each name field */
 .field-container {
     flex: 1; /* Each field takes up equal space */
+    color: #000000;
 }
 
 /* Sub-labels for "First Name" and "Last Name" */
 .sub-label {
     font-size: 0.85em;
-    color: #fffdfd;
+    color: #000000;
     margin-top: 6px;
 }
 
