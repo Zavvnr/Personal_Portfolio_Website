@@ -4,7 +4,7 @@ body {
     margin: 0;
     line-height: 1.0;
     color: #000000;
-    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff); /* changing background color */
+    background: linear-gradient(to bottom, #bbc0915a, #c99433, #73b626); /* changing background color */
     background-attachment: fixed;
 }
 

@@ -58,7 +58,7 @@ h1.index-h1 {
     color: #000000;
     margin: 0;
     line-height: 1.1;
-
+    text-align: center;
     /* force single-line display and gracefully hide overflow */
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -70,7 +70,7 @@ h1.index-h1 {
     min-width: 200px;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* push image to the right */
+    justify-content: center; /* push image to the right */
     padding-left: 1rem; /* spacing from center, adjust as needed */
 }
 
