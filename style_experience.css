@@ -131,13 +131,12 @@ main {
     min-height: 200vh;
 }
 
-/* This is the new Flexbox container for your sections */
 .side-by-side-container {
-    display: flex; /* This is the key: it places the sections next to each other */
-    justify-content: center; /* Centers the boxes on the page */
-    gap: 2rem; /* Creates a gap between the two boxes */
-    flex-wrap: wrap; /* Allows the boxes to stack vertically on small screens */
-    padding: 2rem; /* Adds some space around the container */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
 /* Responsive Design: Stacks columns on smaller screens */
@@ -221,13 +220,13 @@ main {
 }
 
 .features {
-    padding: 50px 0; /* Keep the padding */
-    text-align: center; /* Center the quotes-header and quotes-grid */
+    padding: 50px 0; 
+    text-align: center; 
 }
 
 .feature-item h4 {
     color: #0f0101;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
     font-weight: normal;
@@ -236,7 +235,7 @@ main {
 
 .feature-item p {
     color: #0f0101;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-family: 'Dancing Script', cursive;
     font-size: 1.2em;
     font-style: normal;
@@ -244,20 +243,24 @@ main {
     padding-right: 50px;
 }
 
-/* Basic Reset & Body Styling for relatedClasses.html*/
+.class-wrapper {
+    display: none;
+    margin-bottom: 40px;
+}
+
 .class-header {
+    display: flex;
     text-align: left;
-    margin-bottom: 20px; /* Add some space between the heading and the content */
-    font-family: 'Dancing Script', cursive; /* Use a cursive font like the image */
-    font-size: 2em; /* Significantly larger font size for the quote */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
 }
 
 .class-content {
-    /* Flexbox properties for the side-by-side layout */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px; /* Space between the text and image */
+    gap: 40px;
 
     background-color: #1a1a2e;
     color: #fff;
@@ -305,6 +308,23 @@ main {
     
     /* Optional: Other styles */
     border-radius: 10px;
+}
+
+button#loadMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #b49508;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button#loadMoreButton:hover {
+    background-color: #d4b829;
 }
 
 /* Footer Styling */

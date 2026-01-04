@@ -1,28 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const main = document.querySelector('main');
-    const headerPhoto = document.querySelector('.header-photo'); // Select the new header photo element
+document.addEventListener("DOMContentLoaded", function () {
+  const groups = document.querySelectorAll(".content-wrapper");
+  const loadMoreBtn = document.getElementById("loadMoreButton");
+  
+  let currentGroup = 0;
+  const groupsPerLoad = 3; // Load 1 full section at a time
 
-    // --- Keep your existing scroll logic for the main content ---
-    const topColor = [0, 0, 0];
-    const startBottomColor = [0, 0, 0];
-    const endBottomColor = [130, 80, 200]; 
+  function showGroups() {
+    for (let i = currentGroup; i < currentGroup + groupsPerLoad; i++) {
+      if (groups[i]) {
+        groups[i].style.display = 'block';
+      }
+    }
+    
+    currentGroup += groupsPerLoad;
 
-    // --- Main scroll listener ---
-    window.addEventListener('scroll', () => {
-        // ---- NEW/RE-ADDED: Header Photo Scroll Effect ----
-        // If user has scrolled more than 50px, add the 'scrolled' class to headerPhoto
-        if (window.scrollY > 50) {
-            headerPhoto.classList.add('scrolled');
-        } else {
-            headerPhoto.classList.remove('scrolled');
-        }
+    if (currentGroup >= groups.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
 
-        // ---- Your existing gradient logic for the 'main' element ----
-        const scrollPercentage = Math.min(1, window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
-        const r = startBottomColor[0] + (endBottomColor[0] - startBottomColor[0]) * scrollPercentage;
-        const g = startBottomColor[1] + (endBottomColor[1] - startBottomColor[1]) * scrollPercentage;
-        const b = startBottomColor[2] + (endBottomColor[2] - startBottomColor[2]) * scrollPercentage;
-        const newBottomColor = `rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})`;
-        main.style.backgroundImage = `linear-gradient(to bottom, rgb(${topColor.join(', ')}), ${newBottomColor})`;
-    });
+  groups.forEach(group => group.style.display = 'none');
+
+  showGroups();
+
+  loadMoreBtn.addEventListener("click", showGroups);
 });
