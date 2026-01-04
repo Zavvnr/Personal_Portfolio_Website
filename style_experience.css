@@ -251,9 +251,9 @@ main {
 .class-header {
     display: flex;
     text-align: left;
-    margin-bottom: 20px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
 }
 
 .class-content {

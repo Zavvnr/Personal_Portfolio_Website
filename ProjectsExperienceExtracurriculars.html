@@ -28,146 +28,145 @@
 
     <main>
         <div class="content-wrapper">
-        <section class="class-header">
-            <h2>Projects</h2>
-        </section>
-        </div>
-        <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Badger Solar Racing: Race Strategy Team</h4>
-                <p>Working in a subteam of badger solar racing, the goal of the team is to optimize the usage of car's
-                    battery to maximize the car's potential. Things I've done/been doing are:</p>
-                <ul>
-                    <li>Implementing Isolation Forest algorithm to detect outliers in the car's sensor data.</li>
+            <section class="class-header">
+                <h2>Projects</h2>
+            </section>
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Badger Solar Racing: Race Strategy Team</h4>
+                    <p>Working in a subteam of badger solar racing, the goal of the team is to optimize the usage of
+                        car's
+                        battery to maximize the car's potential. Things I've done/been doing are:</p>
                     <ul>
-                        <li>I implemented Isolation Forest algorithm to detect outliers in the car's sensor data. I
-                            implemented this algorithm by following below sequence:</li>
+                        <li>Implementing Isolation Forest algorithm to detect outliers in the car's sensor data.</li>
                         <ul>
-                            <li>Implemented the Isolation Forest Algorithm</li>
-                            <li>Tested the algorithm using sample toy data</li>
-                            <li>Generate sample battery data using google gemini 2.5 pro</li>
-                            <li>Testing by visualizing if the data cleaned better if we used our previously developed
-                                (interquartile method), the isolation forest algorithm, or both.</li>
+                            <li>I implemented Isolation Forest algorithm to detect outliers in the car's sensor data. I
+                                implemented this algorithm by following below sequence:</li>
+                            <ul>
+                                <li>Implemented the Isolation Forest Algorithm</li>
+                                <li>Tested the algorithm using sample toy data</li>
+                                <li>Generate sample battery data using google gemini 2.5 pro</li>
+                                <li>Testing by visualizing if the data cleaned better if we used our previously
+                                    developed
+                                    (interquartile method), the isolation forest algorithm, or both.</li>
+                            </ul>
+
                         </ul>
-
+                        <li>Developing Neural Networks Reinforcement Learning to help with the optimization. The
+                            optimization
+                            program is still under development. But we plan to make it using the following:
+                        </li>
+                        <ul>
+                            <li>Using Proximal Policy Optimization algorithm to optimally find the best solution
+                                according to the policy defined</li>
+                            <li>Using Recurrent Neural Networks (RNN) to optimally process data before the RL</li>
+                        </ul>
                     </ul>
-                    <li>Developing Neural Networks Reinforcement Learning to help with the optimization. The optimization
-                        program is still under development. But we plan to make it using the following:
-                    </li>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Badger_Solar_Racing.png" class="fixed-size-image">
+                </div>
+            </section>
+
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>UW-Madison Deliberation Dinners Project</h4>
+                    <p>An initiative that brings together UW-Madison undergraduates with diverse ideological
+                        perspectives to
+                        deliberate on important political issues.</p>
+                    <p>I found this experience to be useful and exciting because not only we get to talk about wide
+                        variety
+                        of political issues. It also changed my view on how I approach things,
+                        meaning to not only standing between "yes" or "no situation", but to actually have a clear
+                        standing
+                        and idea on where I want to be in this topic. This experience also taught me how
+                        I can improve quality of discussions by bringing up one topic over another and how we can
+                        further
+                        develop a discussion topic when everyone seems to be in a concensus.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Deliberation_Dinners_logo.png" class="fixed-size-image">
+                </div>
+            </section>
+
+            <section class="class-header">
+                <h2>Personal Projects</h2>
+            </section>
+
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Personal Website</h4>
+                    <p>This website is built using HTML, CSS, and JavaScript. It showcases my background, favorite
+                        quotes,
+                        projects, work experience, and extracurricular activities.</p>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Personal_Website.png" class="fixed-size-image">
+                </div>
+            </section>
+
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Morning Briefing AI Agent</h4>
+                    <p>This project was made with the help of google gemini</p>
+                    <p>I learned to build an AI Agent with the task to help me brief my morning. The AI-Agent workflow
+                        can
+                        be seen as follows: </p>
                     <ul>
-                        <li>Using Proximal Policy Optimization algorithm to optimally find the best solution according to the policy defined</li>
-                        <li>Using Recurrent Neural Networks (RNN) to optimally process data before the RL</li>
+                        <li>Gathering information from 3 sources: Canvas calendar, Weather, and Quotes</li>
+                        <li>Processing and summarizing the information using LLM gemini 1.5 flash</li>
+                        <li>Generating a concise morning briefing</li>
+                        <li>Delivering the briefing via email</li>
                     </ul>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/Badger_Solar_Racing.png" class="fixed-size-image">
-            </div>
-        </section>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Morning_Briefing_Assistant.jpg" class="fixed-size-image">
+                </div>
+            </section>
         </div>
 
         <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>UW-Madison Deliberation Dinners Project</h4>
-                <p>An initiative that brings together UW-Madison undergraduates with diverse ideological perspectives to
-                    deliberate on important political issues.</p>
-                <p>I found this experience to be useful and exciting because not only we get to talk about wide variety
-                    of political issues. It also changed my view on how I approach things,
-                    meaning to not only standing between "yes" or "no situation", but to actually have a clear standing
-                    and idea on where I want to be in this topic. This experience also taught me how
-                    I can improve quality of discussions by bringing up one topic over another and how we can further
-                    develop a discussion topic when everyone seems to be in a concensus.
-                </p>
-            </div>
-            <div class="image-container">
-                <img src="Images/Deliberation_Dinners_logo.png" class="fixed-size-image">
-            </div>
-        </section>
+            <section class="class-header">
+                <h2>Work Experience</h2>
+            </section>
+
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Facilities Planning & Management Division, University of Wisconsin-Madison</h4>
+                    <h5>Student Help at Human Resources Department</h5>
+                    <p>Worked as a student assistant. Tasks include:</p>
+                    <ul>
+                        <li>Filing Employee-Related paper documents</li>
+                        <li>Filing Employee-Related documents using perceptive content and workday</li>
+                        <li>Managing the Front Desk</li>
+                        <li>Organizing & managing files</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Facilities_Planning_&_Management.png" class="fixed-size-image">
+                </div>
+            </section>
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Der Rathskeller, Wisconsin Union</h4>
+                    <h5>Restaurant Team Member</h5>
+                    <p>Worked as a team member. Tasks include:</p>
+                    <ul>
+                        <li>Working in a restaurant team, providing food & beverages, and excellent customer services
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="Images/Wisconsin_Union.png" class="fixed-size-image">
+                </div>
+            </section>
         </div>
 
         <div class="content-wrapper">
-        <section class="class-header">
-            <h2>Personal Projects</h2>
-        </section>
-        </div>
-
-        <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Personal Website</h4>
-                <p>This website is built using HTML, CSS, and JavaScript. It showcases my background, favorite quotes,
-                    projects, work experience, and extracurricular activities.</p>
-            </div>
-            <div class="image-container">
-                <img src="Images/Personal_Website.png" class="fixed-size-image">
-            </div>
-        </section>
-        </div>
-
-        <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Morning Briefing AI Agent</h4>
-                <p>This project was made with the help of google gemini</p>
-                <p>I learned to build an AI Agent with the task to help me brief my morning. The AI-Agent workflow can
-                    be seen as follows: </p>
-                <ul>
-                    <li>Gathering information from 3 sources: Canvas calendar, Weather, and Quotes</li>
-                    <li>Processing and summarizing the information using LLM gemini 1.5 flash</li>
-                    <li>Generating a concise morning briefing</li>
-                    <li>Delivering the briefing via email</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/Morning_Briefing_Assistant.jpg" class="fixed-size-image">
-            </div>
-        </section>
-        </div>
-
-        <div class="content-wrapper">
-        <section class="class-header">
-            <h2>Work Experience</h2>
-        </section>
-        </div>
-
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Facilities Planning & Management Division, University of Wisconsin-Madison</h4>
-                <h5>Student Help at Human Resources Department</h5>
-                <p>Worked as a student assistant. Tasks include:</p>
-                <ul>
-                    <li>Filing Employee-Related paper documents</li>
-                    <li>Filing Employee-Related documents using perceptive content and workday</li>
-                    <li>Managing the Front Desk</li>
-                    <li>Organizing & managing files</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/Facilities_Planning_&_Management.png" class="fixed-size-image">
-            </div>
-        </section>
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Der Rathskeller, Wisconsin Union</h4>
-                <h5>Restaurant Team Member</h5>
-                <p>Worked as a team member. Tasks include:</p>
-                <ul>
-                    <li>Working in a restaurant team, providing food & beverages, and excellent customer services</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/Wisconsin_Union.png" class="fixed-size-image">
-            </div>
-        </section>
-        </div>
-
-        <div class="content-wrapper">
-        <section class="class-header">
-            <h2>Other Extracurricular Activities</h2>
-        </section>
-        </div>
+            <section class="class-header">
+                <h2>Other Extracurricular Activities</h2>
+            </section>
 
         <section class="class-content">
             <div class="text-container">
@@ -176,8 +175,8 @@
                 <p>Studying what it takes to drive AGI into something useful and not harmful for humanity</p>
                 <p>Certification:</p>
                 <ul>
-                    <li><a href="https://bluedot.org/certification?id=recgRL76tx6QW4w2s"
-                            target="_blank">BlueDot AI Safety Impact AGI Strategy Course Certificate</a>
+                    <li><a href="https://bluedot.org/certification?id=recgRL76tx6QW4w2s" target="_blank">BlueDot AI
+                            Safety Impact AGI Strategy Course Certificate</a>
                     </li>
             </div>
             <div class="image-container">
@@ -185,57 +184,54 @@
             </div>
         </section>
 
-        <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Wisconsin AI Safety Initiative (WAISI)</h4>
-                <h5>Technical Team Member</h5>
-                <p>Working together to improve AI Safety. Tasks include:</p>
-                <ul>
-                    <li>Build and update the AI Technical Safety Fundamentals curriculum</li>
-                    <li>Lead AI Technical Safety Fundamentals cohorts, participate in weekly meetings</li>
-                    <li>Participate in Safety Scholars and help with behind the scenes execution</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/WAISI_Logo.png" class="fixed-size-image">
-            </div>
-        </section>
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Wisconsin AI Safety Initiative (WAISI)</h4>
+                    <h5>Technical Team Member</h5>
+                    <p>Working together to improve AI Safety. Tasks include:</p>
+                    <ul>
+                        <li>Build and update the AI Technical Safety Fundamentals curriculum</li>
+                        <li>Lead AI Technical Safety Fundamentals cohorts, participate in weekly meetings</li>
+                        <li>Participate in Safety Scholars and help with behind the scenes execution</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="Images/WAISI_Logo.png" class="fixed-size-image">
+                </div>
+            </section>
         </div>
 
         <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Indonesian Student Association at Madison (PERMIAS)</h4>
-                <h5>Secretary</h5>
-                <p>Proud to help representing organization from the place where I came from. Tasks include:</p>
-                <ul>
-                    <li>Writing organization newsletters</li>
-                    <li>Writing meeting minutes</li>
-                    <li>Helping with events & other related needs</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/PERMIAS_LOGO.png" class="fixed-size-image">
-            </div>
-        </section>
-        </div>
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Indonesian Student Association at Madison (PERMIAS)</h4>
+                    <h5>Secretary</h5>
+                    <p>Proud to help representing organization from the place where I came from. Tasks include:</p>
+                    <ul>
+                        <li>Writing organization newsletters</li>
+                        <li>Writing meeting minutes</li>
+                        <li>Helping with events & other related needs</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="Images/PERMIAS_LOGO.png" class="fixed-size-image">
+                </div>
+            </section>
 
-        <div class="content-wrapper">
-        <section class="class-content">
-            <div class="text-container">
-                <h4>Jejakin Climate Defender</h4>
-                <h5>Participant</h5>
-                <ul>
-                    <li>Planting Mangroove Trees</li>
-                    <li>Discussing Ca</li>
-                    <li>Helping with events & other related needs</li>
-                </ul>
-            </div>
-            <div class="image-container">
-                <img src="Images/PERMIAS_LOGO.png" class="fixed-size-image">
-            </div>
-        </section>
+            <section class="class-content">
+                <div class="text-container">
+                    <h4>Jejakin Climate Defender</h4>
+                    <h5>Participant</h5>
+                    <ul>
+                        <li>Planting Mangroove Trees</li>
+                        <li>Discussing Ca</li>
+                        <li>Helping with events & other related needs</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="Images/PERMIAS_LOGO.png" class="fixed-size-image">
+                </div>
+            </section>
         </div>
 
         <button id="loadMoreButton">Load More</button>

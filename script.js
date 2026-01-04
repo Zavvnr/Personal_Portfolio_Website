@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadMoreBtn = document.getElementById("loadMoreButton");
   
   let currentGroup = 0;
-  const groupsPerLoad = 3; // Load 1 full section at a time
+  const groupsPerLoad = 1; // Load 1 group at a time
 
   function showGroups() {
     for (let i = currentGroup; i < currentGroup + groupsPerLoad; i++) {
