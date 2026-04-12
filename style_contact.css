@@ -218,3 +218,173 @@ footer {
         padding: 20px;
     }
 }
+
+/* Simplified home-page style for the contact page. */
+body {
+    background: #fff;
+}
+
+.hero-container,
+.page-background,
+footer {
+    padding-left: 48px;
+    padding-right: 48px;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    padding-top: 32px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 24px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.index-h1 h1,
+h1.index-h1 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.0;
+    margin: 0 0 18px;
+    text-align: left;
+    white-space: normal;
+    text-overflow: clip;
+}
+
+.hero-nav {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-nav ul li a {
+    color: revert;
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-decoration: underline;
+    transition: none;
+}
+
+.hero-nav ul li a:hover {
+    background-color: transparent;
+}
+
+.page-background {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 20px 0 0;
+    max-width: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.flex-container {
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#contact-form {
+    max-width: 720px;
+    width: 100%;
+}
+
+label,
+.sub-label,
+.required {
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #777;
+    border-radius: 4px;
+    color: #000000;
+}
+
+button {
+    background-color: #333;
+    border-radius: 8px;
+    height: auto;
+    padding: 12px 24px;
+    width: auto;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer.site-container {
+    background: transparent;
+    border-radius: 0;
+    color: #000000;
+    margin-top: 40px;
+    padding-top: 0;
+    padding-bottom: 32px;
+    text-align: left;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    margin: 0 0 18px;
+}
+
+.contact h4 {
+    font-size: 1rem;
+    margin: 18px 0 8px;
+}
+
+.contact-information ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+}
+
+.contact-information li {
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.contact a {
+    color: #000000;
+}
+
+.contact > p {
+    margin-top: 28px;
+}
+
+@media (max-width: 600px) {
+    .hero-container,
+    .page-background,
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
